@@ -1,0 +1,413 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  /* Welcome Page Styles */
+.wlcome-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #000, #2d8afd);
+  background-size: 400% 400%;
+  animation: backgroundShift 8s ease infinite;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.welcome-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.welcome-title {
+  font-size: 8rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  animation: fadeInDown 1.5s ease-in-out;
+}
+
+.welcome-description {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin: auto;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+.welcome-button {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 20px 20px;
+  margin-top: 30px;
+  background: #e7f902;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.welcome-button:hover {
+  background: #ffffff;
+}
+.welcome-video {
+  position: relative; /* Ensures the video spans the background */
+  top: 0;
+  left: 0;
+  width: 50%; /* Makes the video span the full width of the viewport */
+  height: 100%; /* Ensures it spans the full height of the viewport */
+  object-fit: cover; /* Makes sure the video doesn't distort */
+  z-index: -1; /* Places the video behind other elements like text and button */
+
+}
+
+}
+
+h2 {
+  text-align: center;
+  color: #e7f902;
+  margin: 20px 0;
+}
+
+p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0 20px;
+}
+
+.navbar a {
+  color: #e7f902;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero-banner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 80vh;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 300%; /* For 3 slides */
+}
+
+.slide {
+  flex: 1 0 100%;
+  position: relative;
+}
+
+.slide img {
+  width: 50%;
+  height: 30%;
+  object-fit: cover;
+  position: center
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+/* Text Block Styling */
+.intro-text {
+  padding: 50px 20px;
+  background-color: #000000; /* Light gray background */
+  text-align: center;
+}
+.intro-text {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.text-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif; /* Replace with your font */
+  color: #e7f902;
+}
+
+.intro-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: #ffffff;
+  .intro-text {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+}
+
+
+/* Text Block */
+.text-block {
+  padding: 20px;
+}
+
+/* Alphabet Gallery */
+.alphabet-gallery {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.alphabet-item {
+  text-align: center;
+  max-width: 200px;
+}
+
+.alphabet-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.alphabet-img:hover {
+  transform: scale(1.1);
+}
+
+/* Video Gallery Cover */
+.video-gallery-cover {
+  text-align: center;
+  padding: 20px;
+}
+
+.video-gallery-cover button {
+  padding: 10px 20px;
+  background-color: #e7f902;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.video-gallery-cover button:hover {
+  background-color: #c8db01;
+}
+
+.video-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap:wrap ;
+}
+
+video {
+  max-width: 300px;
+}
+
+/* Interactive Grid */
+.interactive-grid {
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr); /* First line: 11 letters */;
+  gap: 15px;
+  justify-items: center;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  padding: 20px;
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.grid-item:hover {
+  background-color: #e7f902;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .hero-slide {
+    flex-direction: column;
+  }
+
+  .alphabet-gallery {
+    flex-direction: column;
+  }
+}
+
+/* Gallery Section */
+#image-gallery {
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gallery-item {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+/* Lightbox */
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+}
+
+#lightbox.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+#close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes backgroundShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+ 
+
+
+
+
+
+
+
