@@ -23,11 +23,11 @@ body {
   padding: 20px;
 }
 
-.welcome-title {
-  font-size: 8rem;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  animation: fadeInDown 1.5s ease-in-out;
+font-size: 8vw; /* Scales with viewport width */
+  line-height: 1;
+  margin: 0 auto;
+  text-align: center;
+  overflow-wrap: break-word; /* Ensures text wraps */
 }
 
 .welcome-description {
@@ -42,7 +42,7 @@ body {
   display: inline-block;
   text-decoration: none;
   font-size: 1rem;
-  padding: 20px 20px;
+  padding: 40px 40px;
   margin-top: 30px;
   background: #e7f902;
   color: #000000;
@@ -675,33 +675,35 @@ video {
   max-width: 300px;
 }
 
-/* Interactive Grid */
+/* Default grid */
 .interactive-grid {
-  padding: 20px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(11, 1fr); /* First line: 11 letters */;
-  gap: 15px;
-  justify-items: center;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
-.grid-item {
-  padding: 20px;
-  background-color: #333;
-  border: 1px solid #444;
-  border-radius: 10px;
-  color: #fff;
+.interactive-grid .letter {
+  width: 100px; /* Fixed width for letters */
+  height: 100px;
   text-align: center;
-  cursor: pointer;
-  font-size: 20px;
+  line-height: 100px;
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
 }
 
-.grid-item:hover {
-  background-color: #e7f902;
-  color: #000;
+/* Mobile view */
+@media (max-width: 768px) {
+  .interactive-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .interactive-grid .letter {
+    width: 80%; /* Stretch letters to fit mobile width */
+    margin: 5px 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -804,4 +806,10 @@ video {
 }
 
 
-
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .welcome-title {
+    font-size: 10vw;
+    padding: 0 10px; /* Add padding for smaller screens */
+  }
+}
