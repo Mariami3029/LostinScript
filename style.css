@@ -402,6 +402,12 @@ video {
 }
 
 
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
  
 
