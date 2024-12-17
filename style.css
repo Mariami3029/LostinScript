@@ -402,11 +402,31 @@ video {
 }
 
 
+/* Default styles */
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: yellow;
+  font-size: 16px;
+}
+
+/* Mobile view */
 @media (max-width: 768px) {
-    .nav-menu {
-        flex-direction: column;
-        align-items: center;
-    }
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+  }
 }
 
  
