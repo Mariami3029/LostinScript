@@ -402,38 +402,40 @@ video {
 }
 
 
-/* Default styles */
+/* Default Navigation Bar */
+nav {
+  background-color: #333; /* Dark background */
+  padding: 10px 0;
+}
+
 .nav-menu {
-  display: flex;
+  display: flex; /* Horizontal by default */
   justify-content: space-around;
-  list-style-type: none;
-  padding: 0;
+  list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 .nav-menu a {
   text-decoration: none;
-  color: yellow;
+  color: yellow; /* Text color */
   font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-/* Mobile view */
+.nav-menu a:hover {
+  color: white; /* Hover effect */
+}
+
+/* Mobile Responsive Navigation */
 @media (max-width: 768px) {
   .nav-menu {
-    flex-direction: column;
+    flex-direction: column; /* Stack items vertically */
     align-items: center;
   }
 
   .nav-menu li {
-    margin: 10px 0;
+    margin: 10px 0; /* Spacing between items */
   }
 }
-
- 
-
-
-
-
-
-
-
